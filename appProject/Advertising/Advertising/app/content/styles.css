@@ -298,7 +298,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: #2c3e50;
 }
 
 hr.star-light:after {
@@ -341,6 +341,7 @@ header .intro-text .name {
     font-family: "Kalam";
     font-size: 2em;
     font-weight: 700;
+    color:#2c3e50 ;
 }
 
 header .intro-text .name:hover
@@ -446,7 +447,21 @@ section h2 {
 
 
 section.success {
-    color: #fff;
+    color: #2c3e50;
+    background: white;
+}
+
+section.videos {
+    color: #2c3e50;
+    background: lightblue;
+}
+section.screens {
+    color: #2c3e50;
+    background: white;
+}
+
+section.promopicture {
+    color: #2c3e50;
     background: lightblue;
 }
 
@@ -1010,7 +1025,7 @@ footer {
 
 
 h3{
-    text-shadow: 2px 2px lightblue;
+    text-shadow: 2px 2px white;
     font-weight: bold;
     text-transform: uppercase;
 }
