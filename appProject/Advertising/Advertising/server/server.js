@@ -27,6 +27,7 @@ var url = 'mongodb://localhost:27017/MyDatabase';
 
 var addressCollection;
 var screens;
+var tags;
 var templates;
 var messagesCollection;
 var dataCollection;
@@ -52,6 +53,7 @@ MongoClient.connect(url, function (err, db) {
                 dataCollection.findOne(function (err, doc) {
                         screens=doc.screens;
                         templates=doc.templates;
+                        tags= doc.tags;
                 });
 
         }
@@ -249,7 +251,8 @@ app.put('/updateMessage', function (request, response) {
                             link:message.link,
                             duration:message.duration,
                             time:message.time,
-                            screens:message.screens
+                            screens:message.screens,
+                            tag:message.tag
                     }
                 );
 
@@ -275,7 +278,7 @@ app.put('/updateMessage', function (request, response) {
 
 app.get("/getScreensAndTemplates",function (request, response) {
 
-        response.send({"screens":screens,"templates":templates});
+        response.send({"screens":screens,"templates":templates,"tags":tags});
 });
 
 
@@ -312,3 +315,4 @@ app.get("/query",function (request, response) {
                 response.send(result);
         });
 });
+

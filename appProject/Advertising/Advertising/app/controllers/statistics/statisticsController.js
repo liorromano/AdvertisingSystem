@@ -16,7 +16,7 @@ statistics.controller('statisticsController', function($scope, $http) {
                     "scale-x": {
                         "color": "red",
 
-                        "values": [ $scope.statistic[0]._id, $scope.statistic[1]._id, $scope.statistic[2]._id],
+                        "values": [$scope.statistic[0]._id, $scope.statistic[1]._id, $scope.statistic[2]._id],
                         "guide": {
                             "line-width": "1px",
                             "line-style": "solid"
@@ -57,7 +57,7 @@ statistics.controller('statisticsController', function($scope, $http) {
                     "series": [
                         {
                             "type": "bar",
-                            "values": [ $scope.statistic[0].count, $scope.statistic[1].count,$scope.statistic[2].count],
+                            "values": [$scope.statistic[0].count, $scope.statistic[1].count, $scope.statistic[2].count],
                             "text": "Safari",
                             "background-color": "#ff4d4d"
                         }
@@ -72,59 +72,65 @@ statistics.controller('statisticsController', function($scope, $http) {
             height: "100%",
             width: "100%"
         });
-        var myJson = {
-            globals: {
-                shadow: false,
-                fontFamily: "Verdana",
-                fontWeight: "100"
-            },
-            type: "pie",
-            backgroundColor: "#fff",
 
-            legend: {
-                layout: "x5",
-                position: "50%",
-                borderColor: "transparent",
-                marker: {
-                    borderRadius: 10,
-                    borderColor: "transparent"
-                }
-            },
-            tooltip: {
-                text: "%v requests"
-            },
+        var myJson = {
+            type: "pie",
+            backgroundColor: "#ffffff",
             plot: {
-                refAngle: "-90",
-                borderWidth: "0px",
+                borderColor: "#2B313B",
+                borderWidth: 1,
+                // slice: 90,
                 valueBox: {
-                    placement: "in",
-                    text: "%npv %",
-                    fontSize: "15px",
-                    textAlpha: 1,
+                    placement: 'out',
+                    text: '%t\n%npv%',
+                    fontFamily: "Open Sans"
+                },
+                tooltip: {
+                    fontSize: '18',
+                    fontFamily: "Open Sans",
+                    padding: "5 10",
+                    text: "%npv%"
+                },
+                animation: {
+                    effect: 2,
+                    method: 5,
+                    speed: 500,
+                    sequence: 1
                 }
+            },
+            plotarea: {
+                margin: "20 0 0 0"
             },
             series: [{
-                text: $scope.statistic[0]._id,
                 values: [$scope.statistic[0].count],
-                backgroundColor: "#ff9999",
+                text: $scope.statistic[0]._id,
+                backgroundColor: '#50ADF5',
             }, {
-                text: $scope.statistic[1]._id,
                 values: [$scope.statistic[1].count],
-                backgroundColor: "#ff66ff"
-
+                text: $scope.statistic[1]._id,
+                backgroundColor: '#FF7965'
             }, {
-                text: $scope.statistic[2]._id,
                 values: [$scope.statistic[2].count],
-                backgroundColor: "#99ccff",
+                text: $scope.statistic[2]._id,
+                backgroundColor: '#FFCB45'
             }]
         };
 
         zingchart.render({
             id: 'myJson',
             data: myJson,
-            height: "100%",
-            width: "100%"
+            height: 500,
+            width: 725
         });
     })
+
+
+
+
+
+
 });
+
+
+
 

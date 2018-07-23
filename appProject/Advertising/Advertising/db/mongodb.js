@@ -3,20 +3,20 @@
  * save the data in mongo db.
  */
 
-var images1 = ["adidas.png"];
-var textArray1 = ["Adidas AG is a multinational corporation, founded and headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories. It is the largest sportswear manufacturer in Europe, and the second largest in the world"];
+var images1 = ["mosheAndEyal.jpg"];
+var textArray1 = ["לראשונה שני הקולות הגדולים, אייל גולן ומשה פרץ במופע מוסיקלי משותף ומרהיב 'הולכים להשתגע'. שיתוף פעולה חד פעמי ומפגש סוחף בין אייל גולן למשה פרץ במופע ענק ומיוחד שיכלול ביצועים חדשים, אהובים ומשותפים למיטב הלהיטים של שני האמנים הגדולים והמצליחים בישראל, בעיבודו והפקתו המוסיקלית של יעקב למאי ובליווי להקה בת 20 נגנים ורקדנים על במה אחת 360."];
 
-var images2 =["decathlon.jpg"];
-var textArray2 = ["Decathlon S.A. is a French sporting goods retailer. It is the largest sporting goods retailer in the world.Decathlon started with a store in Lille, France in 1976, founded by Michel Leclercq. It started to expand abroad a decade later, to Germany in 1986, Spain in 1992, Italy in 1998, Portugal, the United Kingdom in 1999, China in 2003, India in 2009, Hong Kong in 2013, Malaysia in 2016 and Southeast Asia in 2012 and South Africa, Philippines in 2017 and Australia in 2018. Today, there are more than 1100 stores in 38 countries. The company employs more than 78,000 staff from 80 different nationalities."];
+var images3 =["maccabi.jpg"];
+var textArray3 = ["מכבי תל אביב תארח ביום חמישי, ה-26.7, את רדניצ'קי ניש למשחק הראשון במסגרת סיבוב המוקדמות השני של הליגה האירופית. המשחק ייערך באיצטדיון בנתניה"];
 
-var images3 =["mizuno.png"];
-var textArray3 = ["Mizuno Corporation is a Japanese sports equipment and sportswear company, founded in Osaka in 1906 by Rihachi Mizuno. Today, Mizuno is a global corporation which makes a wide variety of sports equipment and sportswear, for golf, tennis, baseball, volleyball, football, running, rugby, skiing, cycling, judo, table tennis, badminton, boxing and athletics."];
+var images2 =["shlomi.jpg"];
+var textArray2 = ["שלומי שבת בקיסריה. במופע יבצע את להיטיו הגדולים מהרפרטואר העשיר שלו, המופע משלב שירים שהפכו לקלאסיקות ואבן דרך בנוף המוזיקה בישראל לצד שירים מהאלבום החדש שבדרך. כל הלהיטים הגדולים שהפכו להמנוני ענק בערב מרגש אחד."];
 
-var images4 =["newbalance.png"];
-var textArray4 = ["New Balance Athletics, Inc. (NB), best known as simply New Balance, is an American multinational corporation based in the Brighton neighborhood of Boston, Massachusetts. The company was founded in 1906 as the 'New Balance Arch Support Company' and is one of the world's major sports footwear manufacturers."];
+var images4 =["harlem.gif"];
+var textArray4 = ["שחקני הקבוצה יחברו למופע שכולו קליעות מפתיעות לסל, בדיחות, שיתוף הקהל במשחק, הטבעות עוצרות נשימה, שליטה חסרת תקדים בכדור ועוד.במהלך 90 שנות קיומה הופיעה הקבוצה מול מאות מיליוני צופים, ב-125 מדינות ברחבי העולם. כשהיא מרבה לשבור מחסומים תרבותיים וחברתיים."];
 
-var images5 =["nike.png"];
-var textArray5 = ["Nike, Inc. is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. The company is headquartered near Beaverton, Oregon, in the Portland metropolitan area. It is the world's largest supplier of athletic shoes and apparel and a major manufacturer of sports equipment."];
+var images5 =["adir.jpg"];
+var textArray5 = ["אדיר מילר היכל התרבות ראשון לציון. מופע סטנדאפ נטו, שנון ומצחיק. מביא לבמה איכויות של וירטואוז אמיתי, מאלתר מחונן וגם שחקן תיאטרון מצליח"];
 
 
 var daysAndHours1=[{"day":1,"startHour":8,"endHour":22},{"day":2,"startHour":8,"endHour":22},{"day":3,"startHour":8,"endHour":22},{"day":4,"startHour":8,"endHour":22},{"day":5,"startHour":8,"endHour":22},{"day":1,"startHour":6,"endHour":22},{"day":7,"startHour":8,"endHour":22}];
@@ -35,11 +35,11 @@ var advertTime5= {"startDate":"2018-01-12","endDate":"2018-12-12","hoursByDay":d
 
 var messages =
     [
-        { "id": 1 , "name" : "message1", "text":  textArray1,"picture" : images1,"link":"Template1.html","duration":2000,"time":advertTime1,"screens": [{id:1},{id:2}]},
-        { "id": 2 , "name" : "message2", "text": textArray2,"picture" : images2,"link":"Template2.html","duration":2000,"time":advertTime2,"screens":[{id:1},{id:3}]},
-        { "id": 3 , "name" : "message3", "text": textArray3,"picture" : images3,"link":"Template3.html","duration":2000,"time":advertTime3,"screens":[{id:2},{id:3}]},
-        { "id": 4 , "name" : "message4", "text": textArray4,"picture" : images4,"link":"Template1.html","duration":2000,"time":advertTime4,"screens":[{id:1}]},
-        { "id": 5 , "name" : "message5", "text": textArray5,"picture" : images5,"link":"Template2.html","duration":2000,"time":advertTime5,"screens":[{id:3}]}
+        { "id": 1 , "name" : "message1", "text":  textArray1,"picture" : images1,"link":"Template1.html","duration":5000,"time":advertTime1,"screens": [{id:1},{id:2}],"tag": 2},
+        { "id": 2 , "name" : "message2", "text": textArray2,"picture" : images2,"link":"Template2.html","duration":5000,"time":advertTime2,"screens":[{id:2},{id:3}],"tag": 2},
+        { "id": 3 , "name" : "message3", "text": textArray3,"picture" : images3,"link":"Template3.html","duration":5000,"time":advertTime3,"screens":[{id:3},{id:1}],"tag": 1},
+        { "id": 4 , "name" : "message4", "text": textArray4,"picture" : images4,"link":"Template1.html","duration":5000,"time":advertTime4,"screens":[{id:1}],"tag": 1},
+        { "id": 5 , "name" : "message5", "text": textArray5,"picture" : images5,"link":"Template2.html","duration":5000,"time":advertTime5,"screens":[{id:3}],"tag": 3}
     ];
 
 
@@ -47,7 +47,7 @@ var messages =
 
 var user={"user":"Admin","pass":"123456"};
 
-var screensAndTemplates={
+var screensTemplatesAndTags={
     "screens" : {
         "availableScreens" : [
             {
@@ -77,6 +77,22 @@ var screensAndTemplates={
             {
                 "id" : "Template3.html",
                 "name" : "Template C"
+            }
+        ]
+    },
+    "tags" : {
+        "availableTags" : [
+            {
+                "id" : 1,
+                "name" : "sport"
+            },
+            {
+                "id" : 2,
+                "name" : "music"
+            },
+            {
+                "id" : 3,
+                "name" : "comedy"
             }
         ]
     }
@@ -113,7 +129,7 @@ MongoClient.connect(url, function(err, db) {
     usersCollection.insert(user);
     messagesCollection.insert(messages);
     addressCollection.insert(address);
-    dataCollection.insert(screensAndTemplates);
+    dataCollection.insert(screensTemplatesAndTags);
 
 
     db.close();

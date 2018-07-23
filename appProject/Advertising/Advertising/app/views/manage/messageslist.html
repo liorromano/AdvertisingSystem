@@ -64,6 +64,13 @@
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Duration:</label>
+                            <input type="text" data-ng-model="type"  class="form-control" placeholder="Type">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
                     <br>
                 </form>
             </div>
@@ -74,8 +81,8 @@
 
         <div>
             <div class="row cardContainer show-hide-animation" data-ng-hide="listViewEnabled">
-                <div class="span3 card card-animation"  data-ng-repeat="message in messages | filter:{name:messageName}| filter:{screens:messageScreen}| filter:{link:messageTemplate} |filter:{id:messageId}| filter:{duration:messageDuration}"
-                     style="margin-top: 30px; height: 140px;">
+                <div class="span3 card card-animation"  data-ng-repeat="message in messages | filter:{name:messageName}| filter:{screens:messageScreen}| filter:{link:messageTemplate} |filter:{id:messageId}| filter:{duration:messageDuration} | filter:{tag:type}"
+                     style="margin-top: 30px; height: 160px;">
                     <div class="cardHeader">{{message.name}} <i class="icon-edit icon-white editIcon"></i></div>
                     <div class="cardBody">
                         <div class="clearfix">
@@ -110,6 +117,14 @@
                                     Duration:
                                     <span>
                                         {{message.duration}}
+                                    </span>
+
+                                </div>
+                                <div >
+                                    Type:
+
+                                    <span>
+                                        {{message.tag}}
                                     </span>
 
                                 </div>

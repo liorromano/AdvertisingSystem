@@ -22,7 +22,7 @@ home.controller('loginController', function ($scope, $routeParams, $http,$window
                     $window.location.href = '/list';
                 }
                 else {
-                    $window.alert("No such user! Please enter username and password again.");
+                    $window.alert("Incorrect password or username.");
                 }
 
 

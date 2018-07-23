@@ -13,7 +13,8 @@ manage.controller('messageEditController', function ($scope, $routeParams, $http
         "link": "",
         "duration": "",
         "time": {"startDate":"","endDate":"","hoursByDay":[{"day":"","startHour":"","endHour":""}]},
-        "screens": [{}]
+        "screens": [{}],
+        "tag": [{}]
     };
     /**
      * the screen id
@@ -42,6 +43,7 @@ manage.controller('messageEditController', function ($scope, $routeParams, $http
 
     $scope.screens;
     $scope.templates;
+    $scope.tags;
 
     /**
      * bring the screens and the tamplates from the db and send back to the server the edit message.
@@ -51,7 +53,7 @@ manage.controller('messageEditController', function ($scope, $routeParams, $http
         $http.get('/getScreensAndTemplates').success(function (data, status) {
             $scope.templates = data.templates;
             $scope.screens = data.screens;
-
+            $scope.tags = data.tags;
 
         });
 

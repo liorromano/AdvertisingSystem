@@ -26,9 +26,6 @@
 
 
             <br>
-            <br>
-
-
 
             <!--input text message-->
             <div class="row">
@@ -49,9 +46,6 @@
 
 
             <br>
-            <br>
-
-
 
             <!--input image message-->
             <div class="row">
@@ -70,29 +64,12 @@
                 </div>
             </div>
 
-
             <br>
-            <br>
-
-
-
-
-            <!--input time message-->
-            <div class="row">
-                <div class="span2">
-                    <h4>Time:</h4>
-                </div>
-                <div class="span10">
-                </div>
-            </div>
-
-
-
 
             <!--input start time message-->
             <div class="row">
                 <div class="span2">
-                    <b> Start Date:</b>
+                    <h4>Start Date:</h4>
                 </div>
                 <div class="span10">
                     <input type="date" ng-model="message.time.startDate" required/>
@@ -106,7 +83,7 @@
             <!--input end time message-->
             <div class="row">
                 <div class="span2">
-                    <b> End Date:</b>
+                    <h4> End Date:</h4>
                 </div>
                 <div class="span10">
                     <input type="date" ng-model="message.time.endDate" required/>
@@ -120,7 +97,7 @@
             <!--input day time message-->
             <div class="row">
                 <div class="span2">
-                    <b>Options:</b>
+                    <h4>Options:</h4>
                     <br>
                 </div>
                 <div class="span10">
@@ -140,11 +117,7 @@
 
 
             <br>
-            <br>
 
-
-
-            <br>
             <!--input Duration time message-->
             <div class="row">
                 <div class="span2">
@@ -154,12 +127,6 @@
                     <input type="number" ng-model="message.duration" min="1" max="10" required /><br />
                 </div>
             </div>
-
-
-
-
-            <br>
-            <br>
 
 
             <!--input screen message-->
@@ -182,12 +149,6 @@
             </div>
 
 
-
-            <br>
-            <br>
-
-
-
             <!--input template message-->
             <div class="row">
                 <div class="span2">
@@ -200,6 +161,17 @@
                 </div>
             </div>
 
+            <!--input template message-->
+            <div class="row">
+                <div class="span2">
+                    <h4>Type:</h4><br>
+                </div>
+                <div class="span10">
+                    <select name="tagSelect" id="tagSelect" ng-model="message.tag" required>
+                        <option ng-repeat="option in tags.availableTags" value="{{option.id}}">{{option.name}}</option>
+                    </select>
+                </div>
+            </div>
 
             <!--submit button-->
 

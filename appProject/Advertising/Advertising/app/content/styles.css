@@ -635,6 +635,7 @@ footer .footer-col {
 footer .footer-below {
     padding: 10px 0;
     background-color: #233140;
+
 }
 
 .btn-social {
@@ -816,6 +817,7 @@ footer {
     margin-top:10px;
     font-weight: bold;
 }
+
 
 
 /* Bootstrap overrides */
@@ -1016,18 +1018,19 @@ footer {
 }
 
 
-#wrapper {
-    display: grid;
-    border: 1px solid black;
-}
-
-
-
-
 h3{
     text-shadow: 2px 2px white;
     font-weight: bold;
     text-transform: uppercase;
+}
+#block_container
+{
+    text-align:center;
+}
+
+#myJson, #myChart
+{
+    display:inline;
 }
 
 

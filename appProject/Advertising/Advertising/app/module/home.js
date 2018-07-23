@@ -48,6 +48,7 @@ home.directive('videos',function(){
 
 
 
+
 home.directive('nav',function(){
     return{
         templateUrl:'views/nav.html'
