@@ -35,11 +35,11 @@ var advertTime5= {"startDate":"2018-01-12","endDate":"2018-12-12","hoursByDay":d
 
 var messages =
     [
-        { "id": 1 , "name" : "message1", "text":  textArray1,"picture" : images1,"link":"Template1.html","duration":5000,"time":advertTime1,"screens": [{id:1},{id:2}],"tag": 2},
-        { "id": 2 , "name" : "message2", "text": textArray2,"picture" : images2,"link":"Template2.html","duration":5000,"time":advertTime2,"screens":[{id:2},{id:3}],"tag": 2},
-        { "id": 3 , "name" : "message3", "text": textArray3,"picture" : images3,"link":"Template3.html","duration":5000,"time":advertTime3,"screens":[{id:3},{id:1}],"tag": 1},
-        { "id": 4 , "name" : "message4", "text": textArray4,"picture" : images4,"link":"Template1.html","duration":5000,"time":advertTime4,"screens":[{id:1}],"tag": 1},
-        { "id": 5 , "name" : "message5", "text": textArray5,"picture" : images5,"link":"Template2.html","duration":5000,"time":advertTime5,"screens":[{id:3}],"tag": 3}
+        { "id": 1 , "name" : "אייל גולן ומשה פרץ", "text":  textArray1,"picture" : images1,"link":"Template1.html","duration":5000,"time":advertTime1,"screens": [{id:1},{id:2}],"tag": 2},
+        { "id": 2 , "name" : "שלומי שבת", "text": textArray2,"picture" : images2,"link":"Template2.html","duration":5000,"time":advertTime2,"screens":[{id:2},{id:3}],"tag": 2},
+        { "id": 3 , "name" : "מכבי תל אביב - רדניצ'קי", "text": textArray3,"picture" : images3,"link":"Template3.html","duration":5000,"time":advertTime3,"screens":[{id:3},{id:1}],"tag": 1},
+        { "id": 4 , "name" : "הארלם גלובטרוטרס", "text": textArray4,"picture" : images4,"link":"Template1.html","duration":5000,"time":advertTime4,"screens":[{id:1}],"tag": 1},
+        { "id": 5 , "name" : "אדיר מילר", "text": textArray5,"picture" : images5,"link":"Template2.html","duration":5000,"time":advertTime5,"screens":[{id:3}],"tag": 3}
     ];
 
 

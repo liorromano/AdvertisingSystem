@@ -448,12 +448,12 @@ section h2 {
 
 section.success {
     color: #2c3e50;
-    background: white;
+    background: lightblue;
 }
 
 section.videos {
     color: #2c3e50;
-    background: lightblue;
+    background: white;
 }
 section.screens {
     color: #2c3e50;
@@ -461,6 +461,11 @@ section.screens {
 }
 
 section.promopicture {
+    color: #2c3e50;
+    background: white;
+}
+
+section.search {
     color: #2c3e50;
     background: lightblue;
 }
@@ -751,7 +756,7 @@ footer .footer-below {
 }
 
 .cardHeader {
-    background-color:lightblue;
+    background-color:#2c3e50;
     font-size:14pt;
     color:white;
     padding:5px;
@@ -975,7 +980,7 @@ footer {
 
 
 .btn-success {
-    color: white;
+    color: #2c3e50;
     background-color: lightblue;
     border-color: lightblue;
 }
@@ -1019,7 +1024,7 @@ footer {
 
 
 h3{
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 2px lightblue;
     font-weight: bold;
     text-transform: uppercase;
 }

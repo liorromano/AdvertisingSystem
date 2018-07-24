@@ -46,7 +46,12 @@ home.directive('videos',function(){
     };
 });
 
-
+home.directive('search',function(){
+    return{
+        controller:'messagesController',
+        templateUrl:'views/Home/search.html'
+    };
+});
 
 
 home.directive('nav',function(){
