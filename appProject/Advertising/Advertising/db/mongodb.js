@@ -45,7 +45,7 @@ var messages =
 
 
 
-var user={"user":"Admin","pass":"123456"};
+var user=[{"user":"Admin","pass":"123456"},{"user":"Lior","pass":"123456"}];
 
 var screensTemplatesAndTags={
     "screens" : {

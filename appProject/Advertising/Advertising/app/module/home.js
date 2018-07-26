@@ -15,6 +15,10 @@ home.config(function($routeProvider) {
             controller: 'loginController',
             templateUrl: 'views/Home/login.html'
         }).
+         when('/reco', {
+            controller: 'messagesController',
+            templateUrl: 'views/Home/reco.html'
+         }).
         otherwise({
             redirectTo:'/'
         });

@@ -288,9 +288,9 @@ app.post("/verifyUser",function (request, response) {
                 var login=JSON.parse(data);
                 usersCollection.findOne({"user": login.username,"pass":login.pass}, function (err, doc) {
                         if(doc!=null)
-                                response.send("true");
+                                response.send(doc);
                         else
-                                response.send("false");
+                                response.send(null);
 
                 });
 

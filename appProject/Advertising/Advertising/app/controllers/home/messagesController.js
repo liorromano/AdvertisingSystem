@@ -11,7 +11,7 @@ home.controller('messagesController',function ($scope, $http){
         List: 1
     };
 
-
+    $scope.username2 = localStorage.getItem("username");
 
     var init=function() {
         $http.get('getAllMessages').success(function(data) {
