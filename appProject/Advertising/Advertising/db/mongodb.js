@@ -45,7 +45,7 @@ var messages =
 
 
 
-var user=[{"user":"Admin","pass":"123456"},{"user":"Lior","pass":"123456"}];
+var user=[{"user":"Admin","pass":"123456"},{"user":"Lior","pass":"123456"},{"user":"Guy","pass":"123456"}];
 
 var screensTemplatesAndTags={
     "screens" : {
@@ -123,7 +123,7 @@ MongoClient.connect(url, function(err, db) {
     var messagesCollection = db.collection('Messages');
     var addressCollection = db.collection('Address');
     var dataCollection = db.collection('Data');
-
+    var historyCollection = db.collection('History');
 
 
     usersCollection.insert(user);

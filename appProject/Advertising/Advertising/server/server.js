@@ -24,7 +24,7 @@ var MongoClient = mongodb.MongoClient;
 var url = 'mongodb://localhost:27017/MyDatabase';
 
 
-
+var historyCollection;
 var addressCollection;
 var screens;
 var tags;
@@ -45,6 +45,7 @@ MongoClient.connect(url, function (err, db) {
         }
         else
         {
+                historyCollection =  db.collection('History');
                 messagesCollection = db.collection('Messages');
                 dataCollection = db.collection('Data');
                 usersCollection=db.collection('Users');
@@ -172,6 +173,18 @@ app.post("/findMessage",function (request, response) {
 
 });
 
+app.post("/findUserHistory",function (request, response) {
+
+    request.on('data', function (data) {
+        console.log(data);
+        historyCollection.findOne({"name": data}, function (err, doc) {
+            response.json(doc);
+        });
+    });
+
+
+});
+
 app.get("/address",function (request, response) {
         addressCollection.find().toArray(function (err, docs) {
                 response.send(docs);
@@ -276,6 +289,8 @@ app.put('/updateMessage', function (request, response) {
 
 
 
+
+
 app.get("/getScreensAndTemplates",function (request, response) {
 
         response.send({"screens":screens,"templates":templates,"tags":tags});
@@ -316,3 +331,46 @@ app.get("/query",function (request, response) {
         });
 });
 
+app.put('/updateHistory', function (request, response) {
+
+    request.on('data', function (data) {
+        var history=JSON.parse(data);
+
+        historyCollection.update(
+            { id: history.id },
+            {
+
+                name: history.name,
+                tags:history.tags
+            }
+        );
+
+    });
+});
+
+app.post("/addHistory",function (request, response) {
+
+
+    request.on('data', function (data) {
+        var history=JSON.parse(data);
+
+        historyCollection.find().limit(1).sort({$natural: -1}).toArray(function (err, docs) {
+            if(docs.length==0)
+            {
+                history.id=1;
+               historyCollection.insert(history);
+
+
+            }
+            else {
+                docs.forEach(function (doc) {
+                    history.id = (doc.id) + 1;
+                    historyCollection.insert(history);
+
+                });
+            }
+        });
+
+
+    });
+});
