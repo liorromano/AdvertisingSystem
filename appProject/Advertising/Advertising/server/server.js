@@ -176,8 +176,8 @@ app.post("/findMessage",function (request, response) {
 app.post("/findUserHistory",function (request, response) {
 
     request.on('data', function (data) {
-        console.log(data);
-        historyCollection.findOne({"name": data}, function (err, doc) {
+        console.log(data.toString());
+        historyCollection.findOne({"name": data.toString()}, function (err, doc) {
             response.json(doc);
         });
     });
@@ -337,7 +337,7 @@ app.put('/updateHistory', function (request, response) {
         var history=JSON.parse(data);
 
         historyCollection.update(
-            { id: history.id },
+            { name: history.name },
             {
 
                 name: history.name,
