@@ -176,7 +176,7 @@ app.post("/findMessage",function (request, response) {
 app.post("/findUserHistory",function (request, response) {
 
     request.on('data', function (data) {
-        console.log(data.toString());
+
         historyCollection.findOne({"name": data.toString()}, function (err, doc) {
             response.json(doc);
         });

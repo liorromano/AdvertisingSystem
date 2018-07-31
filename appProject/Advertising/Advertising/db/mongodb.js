@@ -101,8 +101,10 @@ var screensTemplatesAndTags={
 
 var address =
     [
-        { "address": 1 , "name" : "Elie Wiesel St 2,Rishon LeTsiyon,Israel"},
-        { "address": 2 , "name" : "Sderot Yitshak Rabin,Rishon LeTsiyon,Israel"}
+        { "address": 1 , "name" : "Menora Mivtachim Arena, Yigal Alon Street, Tel Aviv-Yafo,Israel"},
+        { "address": 2 , "name" : "Hekhal HaTarbut/Jabotinsky, Rishon LeTsiyon, Israel"},
+        { "address": 3 , "name" : "Caesarea National Park, Caesarea, Israel"},
+        { "address": 4 , "name" : "Netanya Stadium, Netanya, Israel"}
     ];
 
 

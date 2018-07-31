@@ -19,6 +19,10 @@ home.config(function($routeProvider) {
             controller: 'messagesController',
             templateUrl: 'views/Home/reco.html'
          }).
+        when('/largeMessage/:id', {
+            controller: 'largeMessageController',
+            templateUrl: 'views/Home/largeMessage.html'
+        }).
         otherwise({
             redirectTo:'/'
         });
