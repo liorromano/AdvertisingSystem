@@ -331,6 +331,18 @@ app.get("/query",function (request, response) {
         });
 });
 
+
+app.get("/query2",function (request, response) {
+    messagesCollection.aggregate([
+
+            { $group : { _id : "$tag", count: { $sum: 1 } } }
+        ]
+    ).toArray(function(err, result){
+
+        response.send(result);
+    });
+});
+
 app.put('/updateHistory', function (request, response) {
 
     request.on('data', function (data) {

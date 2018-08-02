@@ -73,6 +73,11 @@ statistics.controller('statisticsController', function($scope, $http) {
             width: "100%"
         });
 
+    })
+
+    $http.get('query2').success(function (data, status) {
+        $scope.statistic = data;
+
         var myJson = {
             type: "pie",
             backgroundColor: "#ffffff",
@@ -103,15 +108,15 @@ statistics.controller('statisticsController', function($scope, $http) {
             },
             series: [{
                 values: [$scope.statistic[0].count],
-                text: $scope.statistic[0]._id,
+                text: "Type id: "+$scope.statistic[0]._id,
                 backgroundColor: '#50ADF5',
             }, {
                 values: [$scope.statistic[1].count],
-                text: $scope.statistic[1]._id,
+                text: "Type id: "+$scope.statistic[1]._id,
                 backgroundColor: '#FF7965'
             }, {
                 values: [$scope.statistic[2].count],
-                text: $scope.statistic[2]._id,
+                text: "Type id: "+$scope.statistic[2]._id,
                 backgroundColor: '#FFCB45'
             }]
         };
@@ -122,14 +127,18 @@ statistics.controller('statisticsController', function($scope, $http) {
             height: 500,
             width: 725
         });
+
     })
 
 
 
 
-
-
 });
+
+
+
+
+
 
 
 
