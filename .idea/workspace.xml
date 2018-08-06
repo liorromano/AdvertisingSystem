@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88a55542-2530-47b0-80bd-35373e61d177" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/controllers/statistics/statisticsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/controllers/statistics/statisticsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/screens.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/screens.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/statistics/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/statistics/graph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/Advertising/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/Advertising/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/data/db/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/data/db/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/collection-2-5605845429201467891.wt" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/data/db/collection-2-5605845429201467891.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/index-3-5605845429201467891.wt" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/data/db/index-3-5605845429201467891.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/journal/WiredTigerLog.0000000406" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/journal/WiredTigerPreplog.0000000003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/journal/WiredTigerPreplog.0000000004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/data/db/mongod.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appProject/Advertising/data/db/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/data/db/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/about.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +22,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="1156">
               <caret line="68" selection-start-line="68" selection-end-line="77" selection-end-column="9" />
             </state>
           </provider>
@@ -72,15 +59,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/login.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,7 +71,7 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="5729">
               <caret line="337" column="36" selection-start-line="337" selection-start-column="36" selection-end-line="337" selection-end-column="36" />
             </state>
           </provider>
@@ -117,11 +95,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screens.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="screens.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/screens.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -205,7 +192,6 @@
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/navManage.html" />
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Recommendations/index.html" />
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/controllers/home/loginController.js" />
-        <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/about.html" />
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/controllers/home/messagesController.js" />
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/login.html" />
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/module/home.js" />
@@ -222,6 +208,7 @@
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/controllers/statistics/statisticsController.js" />
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/statistics/graph.html" />
         <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/screens.html" />
+        <option value="$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/about.html" />
       </list>
     </option>
   </component>
@@ -350,7 +337,7 @@
       <path value="$PROJECT_DIR$/appProject/Advertising/Advertising/node_modules/xtend/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -650,11 +637,12 @@
       <workItem from="1533037077786" duration="8639000" />
       <workItem from="1533046986671" duration="2412000" />
       <workItem from="1533211994515" duration="1838000" />
+      <workItem from="1533537270563" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167029000" />
+    <option name="totallyTimeSpent" value="167050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,6 +655,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.26238146" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
@@ -725,6 +714,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/screens.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/client/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -924,13 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/reco.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -942,9 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,9 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/client/js/socket.io.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
@@ -986,16 +969,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/promopicture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/promopicture.html" />
     <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="1156">
           <caret line="68" selection-start-line="68" selection-end-line="77" selection-end-column="9" />
         </state>
       </provider>
@@ -1023,7 +1000,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="5729">
           <caret line="337" column="36" selection-start-line="337" selection-start-column="36" selection-end-line="337" selection-end-column="36" />
         </state>
       </provider>
@@ -1056,7 +1033,14 @@
     <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/screens.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appProject/Advertising/Advertising/app/views/Home/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
         </state>
       </provider>
     </entry>
